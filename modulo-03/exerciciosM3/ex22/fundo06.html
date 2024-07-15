@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo de tela fixo</title>
     <style>
+
+        /* "background-size: cover;" é uma boa solução , mas se o conteudo for muito grande a imagem para de ser exibida */
+        /* "background-attachment: fixed;" mas se combinarmos com o fixed , apenas o conteudo role para baixo */
+
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url("imagens/wallpaper005.jpg");
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            /* shorthand - background
+                color > image > position > repeat > [size] > attachment
+            */
+
+            /* "o background-size: cover;" não funciona em shorthand "O" */
+
+            background: black url("imagens/wallpaper005.jpg") center center no-repeat fixed; 
             background-size: cover;
         }
 
@@ -19,7 +33,7 @@
             border: 3px solid black;
             color: black;
             border-radius: 15px;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
         }
@@ -28,6 +42,8 @@
 <body>
     <main>
         <h1>Testando imagens</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae quaerat in, odio asperiores, quisquam eaque quod aliquam suscipit veritatis ullam. Exercitationem velit quidem illo a laboriosam, repudiandae cumque doloremque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ea praesentium exercitationem libero voluptatem, doloribus veritatis, in aut, provident soluta hic. Possimus repudiandae illum corporis consequatur rerum, ratione sequi? Aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit illo numquam porro placeat accusantium, maxime, officiis totam ut aliquam, voluptate atque et? Quibusdam aliquam perspiciatis, quam architecto at cumque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae quaerat in, odio asperiores, quisquam eaque quod aliquam suscipit veritatis ullam. Exercitationem velit quidem illo a laboriosam, repudiandae cumque doloremque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ea praesentium exercitationem libero voluptatem, doloribus veritatis, in aut, provident soluta hic. Possimus repudiandae illum corporis consequatur rerum, ratione sequi? Aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit illo numquam porro placeat accusantium, maxime, officiis totam ut aliquam, voluptate atque et? Quibusdam aliquam perspiciatis, quam architecto at cumque?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae quaerat in, odio asperiores, quisquam eaque quod aliquam suscipit veritatis ullam. Exercitationem velit quidem illo a laboriosam, repudiandae cumque doloremque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ea praesentium exercitationem libero voluptatem, doloribus veritatis, in aut, provident soluta hic. Possimus repudiandae illum corporis consequatur rerum, ratione sequi? Aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit illo numquam porro placeat accusantium, maxime, officiis totam ut aliquam, voluptate atque et? Quibusdam aliquam perspiciatis, quam architecto at cumque?</p>
     </main>
 </body>
