@@ -11,27 +11,45 @@
 
         table {
             border-collapse: collapse;
+            margin: 20px;
         }
+
+        caption {
+            font-size: 1.5; 
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        tbody > tr > th.esp {
+    text-align: right;
+    }
+
+    .esp {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    }
 
         td,th {
             border: 1px solid black;
-            padding: 10px;
+            padding: 15px 20px;
             text-align: center;
-        }
-
-        .esp {
-            background-color: gray;
         }
     </style>
 </head>
 <body>
     <table>
+        <caption>Médias de notas</caption>
         <thead>
-            <th class="esp">Àrea</th>
-            <th class="esp">Disciplinas</th>
-            <th rowspan="2" class="esp">Nota</th>
-
-            <th colspan="2" class="esp">Média</th>
+            <th class="esp" scope="col"  rowspan="2">Área</th>
+            <th class="esp" scope="col"  rowspan="2">Disciplinas</th>
+            <th class="esp" scope="colgroup" colspan="2" >Nota</th>
+            <th class="esp" scope="col" rowspan="2">Média
+            </th>
+            <tr>
+                <th class="esp" scope="col">Nota 1</th>
+                <th class="esp" scope="col">Nota 2</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
