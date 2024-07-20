@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cnome {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em HTML</h1>  
+    <table>
+        <caption>Cadastro de Indivíduos</caption>
+        <colgroup> <!--É usado para estilizar colunas , ao invés de eu mudar de uma em uma eu posso criar uma class e estilizar todas -->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>jornalista</td>
+        </tr>
+        <tr>
+            <td>Sérgio amaral</td>
+            <td>M</td>
+            <td>33</td>
+            <td>Juiz</td>
+        </tr>
+        <tr>
+            <td>Carla Simões</td>
+            <td>F</td>
+            <td>29</td>
+            <td>programadora</td>
+        </tr>
+        <tr>
+            <td>Gabriel silva</td>
+            <td>M</td>
+            <td>37</td>
+            <td>Escritor</td>
+        </tr>
+        <tr>
+            <td>Rodrigo Dias</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Engenheiro Civil</td>
+        </tr>
+        <tr>
+            <td>Rafaela dos Santos</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Oftalmologista</td>
+        </tr>
+    </table>
+</body>
+</html>
