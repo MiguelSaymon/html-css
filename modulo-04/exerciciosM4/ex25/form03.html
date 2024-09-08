@@ -29,10 +29,23 @@
             <label for="ihora">Hora da prova :</label>
             <input type="time" name="nhora" id="ihora">
         </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <h1>Form 04</h1>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iemail">Email :</label>
+                <input type="email" name="nemail" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itell">Telefone :</label>
+                <input type="tel" name="ntell" id="itell" autocomplete="tel" pattern="^\(\d{2})\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" required>
+            </p>
+            <!--Estudar sobre RegEX-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
