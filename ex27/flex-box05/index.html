@@ -5,18 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhando</title>
     <style>
-        .conteiner {
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        main {
+            background-color: white;
+            height: 100vh;
+            width: 100vw;
+
             display: flex;
-            background-color: lightgreen;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section {
+            background-color: brown;
+            height: 200px;
+            width: 200px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="conteiner">
-
-    </div>
-    <div class="item">
-
-    </div>
+    <main class="conteiner">
+        <section>
+            <h1>Alinhando com Flex-Box</h1>
+        </section>
+    </main>
 </body>
 </html>
