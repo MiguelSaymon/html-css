@@ -1,3 +1,15 @@
 @charset "UTF-8";
 
 /*Mobal First*/
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > nav > a {
+    width: 90vw;
+}
